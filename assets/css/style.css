@@ -71,7 +71,7 @@ body main {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  border: 1px solid red;
+  /*border: 1px solid red;*/
 }
 body main #section-hero {
   width: 100%;
@@ -200,7 +200,7 @@ body main #section-restaurants a article {
   height: 310px;
   background-color: #FFFFFF;
   border-radius: 15px;
-  border: 1px solid red;
+  /*border: 1px solid red;*/
 }
 body main #section-restaurants a article img {
   width: 100%;
@@ -240,6 +240,53 @@ body main #section-restaurants a article p {
 body main #section-restaurants a article i {
   color: #101010;
   font-size: 24px;
+}
+body footer {
+  width: 100%;
+  height: 300px;
+  background-color: #353535;
+  padding: 25px 79px;
+}
+body footer #section-titre {
+  width: 100%;
+  height: auto;
+  padding: 25px 0px;
+}
+body footer #section-titre h1 {
+  color: #FFFFFF;
+  font-family: Shrikhand;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+body footer #section-text {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+body footer #section-text a {
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+body footer #section-text .font-size-1 {
+  color: #FFFFFF;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+body footer #section-text .font-size-2 {
+  color: #FFFFFF;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 /*# sourceMappingURL=style.css.map */
