@@ -213,7 +213,7 @@ body main #section-restaurants a article img {
 body main #section-restaurants a article .container {
   width: 100%;
   height: auto;
-  padding-left: 13px;
+  padding-left: 24px;
   padding-top: 13px;
   padding-right: 40px;
   padding-bottom: 10px;
@@ -238,7 +238,8 @@ body main #section-restaurants a article p {
   line-height: normal;
 }
 body main #section-restaurants a article i {
-  color: #FF79DA;
+  color: #101010;
+  font-size: 24px;
 }
 
 /*# sourceMappingURL=style.css.map */
