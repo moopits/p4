@@ -1,20 +1,151 @@
+@import './lib/reset.scss';
+
 body {
     background-color: $main-color;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    box-sizing: border-box;
+
+    h2 {
+        color: #000;
+        font-family: Roboto;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-wrap: wrap;
+        margin: 0px 0px;
+    }
+
+    .color-1 {
+        color: $Grey-text;
+    }
+
 
     header {
-        background-color: rgb(100, 165, 100);
-        height: 70px;
+        background-color: $white;
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        /*border: 1px solid red;*/
 
-        nav {
-            color: yellow;
+        img {
+            width: 197px;
+            height: 36px;
+            padding-top: 14px;
+            padding-bottom: 13px;
         }
+
+        button {
+            background-color: #EAEAEA;
+            border-left: 0px;
+            border-top: 3px;
+            border-right: 0px;
+            border-bottom: 0px;
+            border-style: solid;
+            border-color: rgb(165, 165, 165);
+            width: 100%;
+            height: 50px;
+            padding: 0px;
+            margin: 0px;
+            color: $Grey-text;
+            font-family: Roboto;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        i {
+            color: $Grey-text;
+            padding-right: 17px;
+        }
+
+
     }
 
     main {
+        background-color: $white;
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        border: 1px solid red;
 
-        h1 {
-            color: rgb(165, 146, 240);
+        #section-hero {
+            width: 100%;
+            height: 200px;
+            background-color: #F6F6F6;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            
+            p {
+                margin: 0px;
+                font-family: Roboto;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: normal;
+            }
+            
+            button {
+                border-radius: 25px;
+                border: 0px;
+                width: 218;
+                height: 50px;
+                text-size-adjust: auto;
+                padding: 5px 20px;
+                color: var(--White, #FFF);
+                text-align: center;
+                font-family: Roboto;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                background-image: linear-gradient(to bottom,#FF79DA ,#9356DC );
+                background-image: -webkit-linear-gradient(top, #FF79DA , #9356DC);
+                cursor: pointer;
+            }
         }
+
+        #section-fonctionnement {
+            width: 100%;
+            height: 200px;
+            background-color: #F6F6F6;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+
+            nav {
+                width: 100%;
+                height: 200px;
+                background-color: #F6F6F6;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+    
+            }
+
+
+        
+        }
+
+
     }
 
 }
