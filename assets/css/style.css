@@ -123,6 +123,8 @@ body main #section-hero button {
   font-weight: 500;
   line-height: normal;
   background-color: #FFFFFF;
+  background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 8px;
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
   transition: 0.5s;
@@ -137,7 +139,7 @@ body main #section-hero button {
   }*/
 }
 body main #section-hero button:hover {
-  background-color: #9356DC;
+  background-image: linear-gradient(to bottom, #ffa4e5, #a070db);
   box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 8px;
 }
 body main #section-fonctionnement {
@@ -286,9 +288,21 @@ body main #section-restaurants a article p {
   font-weight: 300;
   line-height: normal;
 }
+body main #section-restaurants a article .display-line {
+  display: inline;
+}
+body main #section-restaurants a article .display-solid {
+  display: none;
+}
 body main #section-restaurants a article i {
   color: #101010;
   font-size: 24px;
+}
+body main #section-restaurants a article i:hover .display-line {
+  color: red;
+}
+body main #section-restaurants a article i:hover .display-solid {
+  display: inline;
 }
 body footer {
   width: 100%;
