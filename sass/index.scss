@@ -2,6 +2,8 @@
 
 body {
     background-color: $main-color;
+    /* LOADER */
+    
 
 
     h2 {
@@ -32,15 +34,25 @@ body {
         img {
             width: 197px;
             height: 36px;
-            margin: 14px;   
+            margin: 14px;
+        }
+
+        h1 {
+            margin: 0;
+            font-family: 'Shrikhand';
+            font-weight: 400;
+            font-size: 30px;
+            line-height: 43.74px;
+            text-align: center;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+            padding-top: 14px;
+            padding-bottom: 5px;
+            z-index: 1;
+            width: 100%;
         }
 
         button {
             background-color: #EAEAEA;
-            border-left: 0px;
-            border-top: 3px;
-            border-right: 0px;
-            border-bottom: 0px;
             border-style: solid;
             border-color: rgb(165, 165, 165);
             width: 100%;
@@ -80,13 +92,19 @@ body {
 
         #section-hero {
             width: 100%;
-            height: 200px;
+            height: 287.5px;
             background-color: #F6F6F6;
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
             align-items: center;
-            
+
+            h2 {
+                margin-left: 40px;
+                margin-right: 40px;
+                text-align: center;
+            }
+
             p {
                 margin: 0px;
                 font-family: Roboto;
@@ -94,8 +112,11 @@ body {
                 font-style: normal;
                 font-weight: 300;
                 line-height: normal;
+                margin-left: 40px;
+                margin-right: 40px;
+                text-align: center;
             }
-            
+
             button {
                 border-radius: 25px;
                 border: 0px;
@@ -110,15 +131,36 @@ body {
                 font-style: normal;
                 font-weight: 500;
                 line-height: normal;
-                background-image: linear-gradient(to bottom,#FF79DA ,#9356DC );
-                background-image: -webkit-linear-gradient(top, #FF79DA , #9356DC);
+                background-color: #FFFFFF;
+                //background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
+                //background-image: -webkit-linear-gradient(top, #FF79DA, #9356DC);
+                //box-shadow: rgba(0, 0, 0, 0.50) 0px 3px 8px;
+                -webkit-transition: 0.5s;
+                -moz-transition: 0.5s;
+                transition: 0.5s;
                 cursor: pointer;
+
+                &:hover {
+                    background-color: #9356DC;
+                    //background-image: linear-gradient(to bottom, #ffa4e5, #a070db);
+                    //background-image: -webkit-linear-gradient(top, #ffa4e5, #a070db);    
+                    box-shadow: rgba(0, 0, 0, 0.50) 0px 3px 8px;
+                 }
+
+                /*&:not(:hover) {
+                    -webkit-transition: all 0.5s;
+                    -moz-transition: all 0.5s;
+                    transition: all 0.5s;
+                    background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
+                    background-image: -webkit-linear-gradient(top, #FF79DA, #9356DC);
+                    box-shadow: rgba(0, 0, 0, 0.50) 0px 3px 8px;
+                }*/
             }
+
         }
 
         #section-fonctionnement {
             width: 100%;
-            height: 200px;
             margin-bottom: 50px;
             padding: 0px;
             padding-top: 40px;
@@ -130,11 +172,12 @@ body {
 
             h2 {
                 margin-bottom: 20px;
+                width: 100%;
+                padding-left: 5%;
             }
 
             nav {
                 width: 100%;
-                height: 150px;
                 padding: 0px;
                 display: flex;
                 flex-direction: column;
@@ -142,33 +185,42 @@ body {
                 align-items: center;
 
                 button {
-                    border-radius: 20px;
-                    border: 0px;
-                    width: 322px;
-                    height: 72px;
-                    margin-bottom: 20px;
-                    background-color: #F6F6F6;
-                    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-                    text-size-adjust: auto;
-                    padding-left: 45px;
-                    padding-top: 5px;
-                    padding-right: 40px;
-                    padding-bottom: 5px;
-                    color: black;
-                    text-align: left;
-                    color: #000;
+                    position: relative;
+                    width: 90%;
+                    text-align: center;
                     display: flex;
-                    justify-content: flex-start;
                     align-items: center;
-                    font-family: Roboto;
-                    font-size: 16px;
-                    font-style: normal;
-                    font-weight: 500;
-                    line-height: normal;
+                    justify-content: center;
+                    height: 72.38px;
+                    background-color: #F6F6F6;
+                    border-radius: 20px;
+                    border: none;
                     cursor: pointer;
+                    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+                    font-weight: 500;
+                    font-size: 16px;
+                    font-family: 'Roboto', sans-serif;
+                    margin-bottom: 30px;
+
+                    .badge {
+                        width: 24px;
+                        height: 24px;
+                        background-color: #9356DC;
+                        color: $white;
+                        font-size: 14.18px;
+                        border-radius: 50%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        position: absolute;
+                        left: -12px;
+                    }
 
                     i {
-                        margin-right: 10px;
+                        color: #7E7E7E;
+                        font-size: 19.9px;
+                        position: absolute;
+                        left: 8%;
                     }
 
                     div {
@@ -176,7 +228,7 @@ body {
                         height: auto;
                         display: flex;
                         justify-content: center;
-                        align-items:center;
+                        align-items: center;
                         /*border: 1px solid red;*/
                     }
 
@@ -185,13 +237,18 @@ body {
                         height: auto;
                         /*border: 1px solid red;*/
                     }
-    
+
+                    &:hover {
+                        i {
+                            color: #9356DC;
+                        }
+                    }
+
                 }
-    
             }
 
 
-        
+
         }
 
         #section-restaurants {
@@ -204,6 +261,13 @@ body {
             flex-direction: column;
             justify-content: space-evenly;
             align-items: center;
+            padding-bottom: 40px;
+
+            h2 {
+                width: 100%;
+                padding-left: 5%;
+                margin-bottom: 20px;
+            }
 
             a {
                 width: 89%;
@@ -263,6 +327,8 @@ body {
 
                     i {
                         color: #101010;
+                        //color: linear-gradient(to bottom, #FF79DA, #9356DC);
+                        //color: -webkit-linear-gradient(top, #FF79DA, #9356DC);
                         font-size: 24px;
                     }
                 }
@@ -274,16 +340,16 @@ body {
         }
 
     }
+
     footer {
         width: 100%;
-        height: 300px;
         background-color: #353535;
-        padding: 25px 79px;
+        padding: 22px 25px;
 
         #section-titre {
             width: 100%;
             height: auto;
-            padding: 25px 0px;
+            padding-bottom: 16px;
 
             h1 {
                 color: #FFFFFF;
@@ -306,6 +372,14 @@ body {
             a {
                 text-decoration: none;
                 margin-bottom: 10px;
+
+                .fa-utensils {
+                    padding-right: 10px;
+                }
+
+                .fa-handshake-angle {
+                    padding-right: 5px;
+                }
             }
 
             .font-size-1 {
