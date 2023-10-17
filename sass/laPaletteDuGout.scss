@@ -1,13 +1,19 @@
 @import './lib/_reset.scss';
 
 body {
-    background-color: $main-color;  
+    background-color: $main-color;
+    background-image: url(./assets/images/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100% auto;
+    /*width: auto;*/
+    /*height: 275px;*/
     max-width: 1440px;
 
     
 
-    /* LOADER */
-    @import './responsive.mobile.scss';
+    /* import */
+ 
  
 
     footer {
@@ -84,7 +90,7 @@ body {
         margin: auto;
         max-width: unset;
 
-        @import './responsive-tablette.scss';
+       /* import 768*/
 
         // FOOTER //
         footer {
@@ -162,9 +168,5 @@ body {
         }
     }
 
-
-
-
-
-
 }
+
