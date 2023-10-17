@@ -155,99 +155,6 @@ body h2 {
 body .color-1 {
   color: #353535;
 }
-@media (min-width: 768px) {
-  body #section-hero h2 {
-    font-family: Roboto;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-  }
-  body #section-fonctionnement {
-    width: 100%;
-    margin-bottom: 50px;
-    padding: 0px;
-    padding-top: 40px;
-    background-color: #FFFFFF;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-  body #section-restaurants {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-  }
-  body #section-restaurants a {
-    width: 45%;
-    height: 310px;
-    margin-bottom: 18px;
-    background-color: #FFFFFF;
-    border-radius: 15px;
-    text-decoration: none;
-    color: #000;
-    cursor: pointer;
-    /*border: 1px solid red;*/
-  }
-  body footer {
-    width: 100%;
-    background-color: #353535;
-    padding: 22px 25px;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: flex-end;
-  }
-  body footer #section-titre {
-    width: 100%;
-    height: auto;
-    padding-bottom: 16px;
-  }
-  body footer #section-titre h1 {
-    color: #FFFFFF;
-    font-family: Shrikhand;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-  }
-  body footer #section-text {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-end;
-  }
-  body footer #section-text a {
-    text-decoration: none;
-    margin-bottom: 10px;
-  }
-  body footer #section-text a .fa-utensils {
-    padding-right: 10px;
-  }
-  body footer #section-text a .fa-handshake-angle {
-    padding-right: 5px;
-  }
-  body footer #section-text .font-size-1 {
-    color: #FFFFFF;
-    font-family: Roboto;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-  }
-  body footer #section-text .font-size-2 {
-    color: #FFFFFF;
-    font-family: Roboto;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-  }
-}
 body header {
   background-color: #ffffff;
   height: auto;
@@ -308,6 +215,7 @@ body main {
   justify-content: space-around;
   align-items: center;
   /*border: 1px solid red;*/
+  background-color: #F6F6F6;
 }
 body main #section-hero {
   width: 100%;
@@ -365,30 +273,21 @@ body main #section-hero button:hover {
   transform: scale(1.01);
 }
 body main #section-fonctionnement {
-  width: 100%;
-  margin-bottom: 50px;
-  padding: 0px;
-  padding-top: 40px;
-  background-color: #FFFFFF;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
   align-items: center;
+  justify-content: center;
+  background-color: white;
+  width: 100%;
 }
 body main #section-fonctionnement h2 {
-  margin-bottom: 20px;
   width: 100%;
-  padding-left: 5%;
+  padding-left: 3%;
+  line-height: 28px;
+  margin-top: 19.92px;
+  margin-bottom: 19.92px;
 }
-body main #section-fonctionnement nav {
-  width: 100%;
-  padding: 0px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-}
-body main #section-fonctionnement nav button {
+body main #section-fonctionnement button {
   position: relative;
   width: 90%;
   text-align: center;
@@ -396,7 +295,7 @@ body main #section-fonctionnement nav button {
   align-items: center;
   justify-content: center;
   height: 72.38px;
-  background-color: #F6F6F6;
+  background-color: #F7F7F7;
   border-radius: 20px;
   border: none;
   cursor: pointer;
@@ -406,7 +305,7 @@ body main #section-fonctionnement nav button {
   font-family: "Roboto", sans-serif;
   margin-bottom: 30px;
 }
-body main #section-fonctionnement nav button .badge {
+body main #section-fonctionnement button .badge {
   width: 24px;
   height: 24px;
   background-color: #9356DC;
@@ -419,26 +318,13 @@ body main #section-fonctionnement nav button .badge {
   position: absolute;
   left: -12px;
 }
-body main #section-fonctionnement nav button i {
+body main #section-fonctionnement button i {
   color: #7E7E7E;
   font-size: 19.9px;
   position: absolute;
   left: 8%;
 }
-body main #section-fonctionnement nav button div {
-  width: 40px;
-  height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /*border: 1px solid red;*/
-}
-body main #section-fonctionnement nav button p {
-  width: auto;
-  height: auto;
-  /*border: 1px solid red;*/
-}
-body main #section-fonctionnement nav button:hover i {
+body main #section-fonctionnement button:hover i {
   color: #9356DC;
 }
 body main #section-restaurants {
@@ -455,7 +341,7 @@ body main #section-restaurants {
 }
 body main #section-restaurants h2 {
   width: 100%;
-  padding-left: 5%;
+  padding-left: 3%;
   margin-bottom: 20px;
 }
 body main #section-restaurants a {
@@ -597,5 +483,121 @@ body footer #section-text .font-size-2 {
   font-weight: 400;
   line-height: normal;
 }
+
+@media (min-width: 768px) {
+  body {
+    margin: auto;
+    max-width: unset;
+  }
+  body main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  body main #section-hero h2 {
+    font-family: Roboto;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  body main #section-fonctionnement {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+  }
+  body main #section-fonctionnement button {
+    width: 28%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  body main #section-fonctionnement button i {
+    left: 7%;
+  }
+  body main #section-restaurants {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  body main #section-restaurants a {
+    width: 45%;
+    height: 310px;
+    margin-bottom: 18px;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+    /*border: 1px solid red;*/
+  }
+  body footer {
+    width: 100%;
+    background-color: #353535;
+    padding: 22px 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+  body footer #section-titre {
+    height: 30px;
+    padding-bottom: 0;
+    order: 2;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  body footer #section-titre h1 {
+    color: #FFFFFF;
+    font-family: Shrikhand;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  body footer #section-text {
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    order: 1;
+    width: auto;
+  }
+  body footer #section-text a {
+    text-decoration: none;
+    margin-bottom: 0;
+    margin-right: 20px;
+  }
+  body footer #section-text a .fa-utensils {
+    padding-right: 10px;
+  }
+  body footer #section-text a .fa-handshake-angle {
+    padding-right: 5px;
+  }
+  body footer #section-text .font-size-1 {
+    color: #FFFFFF;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  body footer #section-text .font-size-2 {
+    color: #FFFFFF;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
+/*@import './scss-autres-pages/_laPaletteDuGout.scss';*/
 
 /*# sourceMappingURL=style.css.map */
