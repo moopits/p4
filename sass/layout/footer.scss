@@ -1,86 +1,67 @@
-@import './lib/_reset.scss';
+footer {
+    width: 100%;
+    background-color: #353535;
+    padding: 22px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
 
-body {
-    background-color: $main-color;
-    background-image: url(./assets/images/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: 100% auto;
-    /*width: auto;*/
-    /*height: 275px;*/
-    max-width: 1440px;
-
-    
-
-    /* import */
- 
- 
-
-    footer {
+    #section-titre {
         width: 100%;
-        background-color: #353535;
-        padding: 22px 25px;
+        height: auto;
+        padding-bottom: 16px;
+
+        h1 {
+            color: #FFFFFF;
+            font-family: Shrikhand;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+    }
+
+    #section-text {
+        width: 100%;
+        height: auto;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
 
-        #section-titre {
-            width: 100%;
-            height: auto;
-            padding-bottom: 16px;
+        a {
+            text-decoration: none;
+            margin-bottom: 10px;
 
-            h1 {
-                color: #FFFFFF;
-                font-family: Shrikhand;
-                font-size: 18px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: normal;
+            .fa-utensils {
+                padding-right: 10px;
+            }
+
+            .fa-handshake-angle {
+                padding-right: 5px;
             }
         }
 
-        #section-text {
-            width: 100%;
-            height: auto;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            align-items: flex-start;
-
-            a {
-                text-decoration: none;
-                margin-bottom: 10px;
-
-                .fa-utensils {
-                    padding-right: 10px;
-                }
-
-                .fa-handshake-angle {
-                    padding-right: 5px;
-                }
-            }
-
-            .font-size-1 {
-                color: #FFFFFF;
-                font-family: Roboto;
-                font-size: 16px;
-                font-style: normal;
-                font-weight: 500;
-                line-height: normal;
-            }
-
-            .font-size-2 {
-                color: #FFFFFF;
-                font-family: Roboto;
-                font-size: 16px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: normal;
-            }
+        .font-size-1 {
+            color: #FFFFFF;
+            font-family: Roboto;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
         }
 
+        .font-size-2 {
+            color: #FFFFFF;
+            font-family: Roboto;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
     }
+
 }
 
 // MEDIA 768px //
@@ -89,8 +70,6 @@ body {
     body {
         margin: auto;
         max-width: unset;
-
-       /* import 768*/
 
         // FOOTER //
         footer {
@@ -168,5 +147,9 @@ body {
         }
     }
 
-}
 
+
+
+
+
+}

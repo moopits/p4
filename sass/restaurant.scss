@@ -1,0 +1,27 @@
+body {
+    // background-color: $main-color;
+    // background-image: url(./assets/images/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+    // background-repeat: no-repeat;
+    // background-position: top;
+    // background-size: 100% auto;
+    // /*width: auto;*/
+    // /*height: 275px;*/
+    max-width: 1440px;
+
+
+    header {
+        position: relative;
+
+        a {
+            position: absolute;
+            left: 20px;
+            z-index: 2;
+            text-decoration: none;
+            color: black;
+        }
+    }
+
+
+
+
+}
