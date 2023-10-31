@@ -1,13 +1,5 @@
-body {
-    // background-color: $main-color;
-    // background-image: url(./assets/images/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
-    // background-repeat: no-repeat;
-    // background-position: top;
-    // background-size: 100% auto;
-    // /*width: auto;*/
-    // /*height: 275px;*/
+.eatery {
     max-width: 1440px;
-
 
     header {
         position: relative;
@@ -18,10 +10,224 @@ body {
             z-index: 2;
             text-decoration: none;
             color: black;
+            top: 26px;
+        }
+
+        img {
+            height: 275px;
+            object-fit: cover;
+            margin: 0;
+            width: 100%;
         }
     }
 
 
+    main.eateries {
+        display: flex;
+        flex-direction: column;
+        background-color: $greyBG;
+        border-radius: 40px 40px 0px 0px;
+        z-index: 1;
+        margin-top: -40px;
+        position: relative;
+        padding-top: 20px;
 
+        h2 {
+            font-family: 'Shrikhand';
+            font-size: 28px;
+            font-style: italic;
+            line-height: 40.82px;
+            font-weight: 400;
+            display: flex;
+            justify-content: space-between;
+            padding-left: 17px;
+            padding-right: 41px;
+            margin-bottom: 0;
+
+            .like {
+                padding-left: 20px;
+            }
+        }
+
+        section.menu {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            animation: fadeIn 0.5s both;
+
+            @for $i from 1 through 4 {
+                &:nth-child(#{$i}) {
+                    animation-delay: 500ms * $i;
+                }
+            }
+
+            h3 {
+                text-transform: uppercase;
+                padding-bottom: 6px;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 18.75px;
+                width: 90%;
+                margin-top: 40px;
+            }
+
+            hr {
+                color: $lightGreen;
+                background-color: $lightGreen;
+                border-width: 0;
+                width: 40px;
+                // margin-left: 5%;
+                // margin-top: -15px;
+                height: 3px;
+                // margin-bottom: 20px;
+                margin: -2px 0 18px -76%;
+            }
+
+            article {
+                display: flex;
+                justify-content: space-between;
+                width: 90%;
+                height: 69px;
+                box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+                border-radius: 15.0431px;
+                background-color: $white;
+                cursor: pointer;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                margin-bottom: 12px;
+
+                .description {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    gap: 5px;
+                    padding: 12px 16px 12px 15px;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+
+                    h4 {
+                        margin: 0;
+                        font-weight: 500;
+                        font-size: 18px;
+                        line-height: 21.09px;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+
+                    .sub-title {
+                        display: flex;
+                        justify-content: space-between;
+
+                        span {
+                            font-size: 15.0431px;
+                            line-height: 18px;
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                        }
+
+                        .price {
+                            font-weight: 700;
+                            max-width: 80%;
+                        }
+                    }
+                }
+
+                .tick {
+                    background-color: $lightGreen;
+                    color: $white;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-right: -60px;
+                    transition: all .4s linear;
+                    width: 59px;
+
+
+                    i {
+                        font-size: 21px;
+                        margin: 0;
+                    }
+                }
+
+                &:hover {
+                    .tick {
+                        margin-right: 0;
+                    }
+                }
+            }
+
+        }
+
+        div.command {
+            margin: auto;
+
+            button {
+                margin-top: 40px;
+                margin-bottom: 40px;
+                // @include button-purple;
+            }
+        }
+    }
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@media screen and (min-width: 769px) {
+    body.eatery {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        header {
+            width: 100%;
+        }
+
+        main.eateries {
+            max-width: 1440px;
+            width: 85%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            h2 {
+                justify-content: center;
+            }
+
+            i {
+                margin-left: 30px;
+            }
+
+            section.menu {
+                max-width: 634px;
+                width: 100%;
+
+                hr {
+                    margin: -2px 0 18px -84%;
+                }
+                
+            }
+        }
+
+        footer {
+            width: 100%;
+        }
+    }
 
 }

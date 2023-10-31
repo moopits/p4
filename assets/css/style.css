@@ -160,6 +160,27 @@ footer #section-text .font-size-2 {
     line-height: normal;
   }
 }
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
 .anim-button {
   border-radius: 25px;
   border: 0px;
@@ -607,18 +628,203 @@ body main #section-restaurants a article p {
     /*border: 1px solid red;*/
   }
 }
-body {
+.eatery {
   max-width: 1440px;
 }
-body header {
+.eatery header {
   position: relative;
 }
-body header a {
+.eatery header a {
   position: absolute;
   left: 20px;
   z-index: 2;
   text-decoration: none;
   color: black;
+  top: 26px;
+}
+.eatery header img {
+  height: 275px;
+  object-fit: cover;
+  margin: 0;
+  width: 100%;
+}
+.eatery main.eateries {
+  display: flex;
+  flex-direction: column;
+  background-color: #F7F7F7;
+  border-radius: 40px 40px 0px 0px;
+  z-index: 1;
+  margin-top: -40px;
+  position: relative;
+  padding-top: 20px;
+}
+.eatery main.eateries h2 {
+  font-family: "Shrikhand";
+  font-size: 28px;
+  font-style: italic;
+  line-height: 40.82px;
+  font-weight: 400;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 17px;
+  padding-right: 41px;
+  margin-bottom: 0;
+}
+.eatery main.eateries h2 .like {
+  padding-left: 20px;
+}
+.eatery main.eateries section.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 0.5s both;
+}
+.eatery main.eateries section.menu:nth-child(1) {
+  animation-delay: 500ms;
+}
+.eatery main.eateries section.menu:nth-child(2) {
+  animation-delay: 1000ms;
+}
+.eatery main.eateries section.menu:nth-child(3) {
+  animation-delay: 1500ms;
+}
+.eatery main.eateries section.menu:nth-child(4) {
+  animation-delay: 2000ms;
+}
+.eatery main.eateries section.menu h3 {
+  text-transform: uppercase;
+  padding-bottom: 6px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 18.75px;
+  width: 90%;
+  margin-top: 40px;
+}
+.eatery main.eateries section.menu hr {
+  color: #99E2D0;
+  background-color: #99E2D0;
+  border-width: 0;
+  width: 40px;
+  height: 3px;
+  margin: -2px 0 18px -76%;
+}
+.eatery main.eateries section.menu article {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  height: 69px;
+  box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+  border-radius: 15.0431px;
+  background-color: #ffffff;
+  cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 12px;
+}
+.eatery main.eateries section.menu article .description {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 5px;
+  padding: 12px 16px 12px 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.eatery main.eateries section.menu article .description h4 {
+  margin: 0;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21.09px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.eatery main.eateries section.menu article .description .sub-title {
+  display: flex;
+  justify-content: space-between;
+}
+.eatery main.eateries section.menu article .description .sub-title span {
+  font-size: 15.0431px;
+  line-height: 18px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.eatery main.eateries section.menu article .description .sub-title .price {
+  font-weight: 700;
+  max-width: 80%;
+}
+.eatery main.eateries section.menu article .tick {
+  background-color: #99E2D0;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: -60px;
+  transition: all 0.4s linear;
+  width: 59px;
+}
+.eatery main.eateries section.menu article .tick i {
+  font-size: 21px;
+  margin: 0;
+}
+.eatery main.eateries section.menu article:hover .tick {
+  margin-right: 0;
+}
+.eatery main.eateries div.command {
+  margin: auto;
+}
+.eatery main.eateries div.command button {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+@media screen and (min-width: 769px) {
+  body.eatery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  body.eatery header {
+    width: 100%;
+  }
+  body.eatery main.eateries {
+    max-width: 1440px;
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  body.eatery main.eateries h2 {
+    justify-content: center;
+  }
+  body.eatery main.eateries i {
+    margin-left: 30px;
+  }
+  body.eatery main.eateries section.menu {
+    max-width: 634px;
+    width: 100%;
+  }
+  body.eatery main.eateries section.menu hr {
+    margin: -2px 0 18px -84%;
+  }
+  body.eatery footer {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
