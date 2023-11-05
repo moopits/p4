@@ -1,5 +1,5 @@
 .eatery {
-    max-width: 1440px;
+    // max-width: 1440px;
 
     header {
         position: relative;
@@ -55,6 +55,7 @@
             justify-content: center;
             align-items: center;
             animation: fadeIn 0.5s both;
+            width: 100%;
 
             @for $i from 1 through 4 {
                 &:nth-child(#{$i}) {
@@ -77,11 +78,8 @@
                 background-color: $lightGreen;
                 border-width: 0;
                 width: 40px;
-                // margin-left: 5%;
-                // margin-top: -15px;
                 height: 3px;
-                // margin-bottom: 20px;
-                margin: -2px 0 18px -76%;
+                margin: -2px 0 18px -83%;
             }
 
             article {
@@ -133,6 +131,8 @@
                         .price {
                             font-weight: 700;
                             max-width: 80%;
+                            text-overflow: inherit;
+                            width: 35px;
                         }
                     }
                 }
@@ -221,7 +221,7 @@
                 hr {
                     margin: -2px 0 18px -84%;
                 }
-                
+
             }
         }
 

@@ -628,9 +628,6 @@ body main #section-restaurants a article p {
     /*border: 1px solid red;*/
   }
 }
-.eatery {
-  max-width: 1440px;
-}
 .eatery header {
   position: relative;
 }
@@ -679,6 +676,7 @@ body main #section-restaurants a article p {
   justify-content: center;
   align-items: center;
   animation: fadeIn 0.5s both;
+  width: 100%;
 }
 .eatery main.eateries section.menu:nth-child(1) {
   animation-delay: 500ms;
@@ -707,7 +705,7 @@ body main #section-restaurants a article p {
   border-width: 0;
   width: 40px;
   height: 3px;
-  margin: -2px 0 18px -76%;
+  margin: -2px 0 18px -83%;
 }
 .eatery main.eateries section.menu article {
   display: flex;
@@ -756,6 +754,8 @@ body main #section-restaurants a article p {
 .eatery main.eateries section.menu article .description .sub-title .price {
   font-weight: 700;
   max-width: 80%;
+  text-overflow: inherit;
+  width: 35px;
 }
 .eatery main.eateries section.menu article .tick {
   background-color: #99E2D0;
