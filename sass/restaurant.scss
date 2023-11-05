@@ -73,14 +73,29 @@
                 margin-top: 40px;
             }
 
-            hr {
+            /*hr {
                 color: $lightGreen;
                 background-color: $lightGreen;
                 border-width: 0;
                 width: 40px;
                 height: 3px;
                 margin: -2px 0 18px -83%;
+            }*/
+
+            .hr-like-position{
+                width: 90%;
+                margin-bottom: 12px;
+
+
+                .hr-like {
+                    width: 40px;
+                    height: 3px;
+                    background-color: $lightGreen;
+                
+                }
             }
+
+            
 
             article {
                 display: flex;
