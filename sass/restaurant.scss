@@ -46,6 +46,11 @@
 
             .like {
                 padding-left: 20px;
+
+                .fa-solid {
+                    top: 8px;
+                    left: 20px;
+                }
             }
         }
 
@@ -82,7 +87,7 @@
                 margin: -2px 0 18px -83%;
             }*/
 
-            .hr-like-position{
+            .hr-like-position {
                 width: 90%;
                 margin-bottom: 12px;
 
@@ -91,11 +96,11 @@
                     width: 40px;
                     height: 3px;
                     background-color: $lightGreen;
-                
+
                 }
             }
 
-            
+
 
             article {
                 display: flex;

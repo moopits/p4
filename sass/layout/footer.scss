@@ -1,38 +1,32 @@
+
+
 footer {
-    width: 100%;
-    background-color: #353535;
-    padding: 22px 25px;
+    background-color: $Grey-text;
+    color: $white;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
 
-    #section-titre {
-        width: 100%;
-        height: auto;
-        padding-bottom: 16px;
-
-        h1 {
-            color: #FFFFFF;
-            font-family: Shrikhand;
-            font-size: 18px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
-        }
+    h2 {
+        margin: 0;
+        padding-left: 25px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        font-family: 'Shrikhand';
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 26.24px;
     }
 
-    #section-text {
-        width: 100%;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
+    p {
+        margin: 0;
+        padding-left: 25px;
+        padding-bottom: 15px;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 18.75px;
 
         a {
-            text-decoration: none;
-            margin-bottom: 10px;
+            color: $white;
 
             .fa-utensils {
                 padding-right: 10px;
@@ -43,113 +37,31 @@ footer {
             }
         }
 
-        .font-size-1 {
-            color: #FFFFFF;
-            font-family: Roboto;
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 500;
-            line-height: normal;
-        }
-
-        .font-size-2 {
-            color: #FFFFFF;
-            font-family: Roboto;
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
+        &.contact {
+            padding-bottom: 25px;
         }
     }
-
 }
 
-// MEDIA 768px //
-@media (min-width: 768px) {
+@media screen and (min-width: 769px) {
+    footer {
+        flex-direction: row;
+        justify-content: flex-end;
+        height: 114px;
 
-    body {
-        margin: auto;
-        max-width: unset;
+        h2 {
+            width: 20%;
+            order: 2;
+            padding-bottom: 30px;
+            padding-top: 60px;
+            text-align: center;
+        }
 
-        // FOOTER //
-        footer {
-            width: 100%;
-            background-color: #353535;
-            padding: 22px 25px;
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-end;
-            align-items: flex-end;
-
-            #section-titre {
-                height: 30px;
-                padding-bottom: 0;
-                order: 2;
-                width: auto;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                margin-left: 20px;
-                margin-right: 20px;
-
-                h1 {
-                    color: #FFFFFF;
-                    font-family: Shrikhand;
-                    font-size: 18px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: normal;
-                }
-            }
-
-            #section-text {
-                height: 30px;
-                display: flex;
-                flex-direction: row;
-                justify-content: flex-end;
-                align-items: center;
-                order: 1;
-                width: auto;
-
-                a {
-                    text-decoration: none;
-                    margin-bottom: 0;
-                    margin-right: 20px;
-
-                    .fa-utensils {
-                        padding-right: 10px;
-                    }
-
-                    .fa-handshake-angle {
-                        padding-right: 5px;
-                    }
-                }
-
-                .font-size-1 {
-                    color: #FFFFFF;
-                    font-family: Roboto;
-                    font-size: 16px;
-                    font-style: normal;
-                    font-weight: 500;
-                    line-height: normal;
-                }
-
-                .font-size-2 {
-                    color: #FFFFFF;
-                    font-family: Roboto;
-                    font-size: 16px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: normal;
-                }
-            }
-
+        p {
+            order: 1;
+            padding-top: 25px;
+            padding-bottom: 30px;
+            padding-top: 62px;
         }
     }
-
-
-
-
-
-
 }

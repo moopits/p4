@@ -54,17 +54,23 @@ a {
 
 .like {
     cursor: pointer;
+    position: relative;
 
     i {
         font-size: 24px;
     }
 
-    i:hover {
-        transition: color .5s;
-        font-weight: bold;
-        background-clip: text;
-        -webkit-background-clip: text;
+    .fa-solid {
         color: transparent;
-        background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+        background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+        -webkit-background-clip: text;
+        opacity: 0;
+        transition: all .5s ease-in-out;
+        position: absolute;
+        left: 0;
+
+        &:hover {
+            opacity: 1;
+        }
     }
 }
