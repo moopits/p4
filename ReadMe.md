@@ -31,7 +31,7 @@ correctif des infos slash / pas necessaire en fin de ligne pour TOUS les fichier
 
 CSS
 
-update de 0.5s à 1s realié pour les coeurs (shared.scss)
+update de 0.5s à 1s realisé pour les coeurs (shared.scss)
 
 .fa-solid {
 
