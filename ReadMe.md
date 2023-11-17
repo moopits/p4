@@ -24,6 +24,16 @@ correctifs apres evaluation
   opacity: 1;
 }
 
+correctif pour   l'info "Paris, Belleville" est la valeur d'un attribut "value" d'un champs de recherche
+
+correctif des infos slash / pas necessaire en fin de ligne pour TOUS les fichiers html
+100% vert pour tous les fichiers html
+
+CSS
+
+aucune erreur mais 3 avertissements du aux extensions proprietaire
+
+fichiers HTML et CSS passés au validateur w3c
 
 
 

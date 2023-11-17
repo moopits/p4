@@ -191,21 +191,33 @@ body {
             height: 50px;
             padding: 0px;
             margin: 0px;
-            color: $Grey-text;
+            /*color: $Grey-text;
             font-family: Roboto;
-            font-size: 16px;
+            font-size: 40px;
             font-style: normal;
             font-weight: 500;
-            line-height: normal;
+            line-height: normal;*/
             display: flex;
             flex-direction: row;
             justify-content: center;
             align-items: center;
-            cursor: pointer;
+            /*cursor: pointer;*/
 
             i {
                 color: $Grey-text;
                 padding-right: 17px;
+            }
+
+            input {
+                width: 120px;
+                background-color: #EAEAEA;
+                color: $Grey-text;
+                font-family: Roboto;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                cursor: pointer;
             }
         }
 
