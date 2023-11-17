@@ -31,6 +31,13 @@ correctif des infos slash / pas necessaire en fin de ligne pour TOUS les fichier
 
 CSS
 
+update de 0.5s à 1s realié pour les coeurs (shared.scss)
+
+.fa-solid {
+
+        transition: all 1s ease-in-out;
+}
+
 aucune erreur mais 3 avertissements du aux extensions proprietaire
 
 fichiers HTML et CSS passés au validateur w3c
