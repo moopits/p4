@@ -46,7 +46,7 @@ fichiers HTML et CSS passés au validateur w3c
 
 underscore pour ne pas compiler autres que le main et obtenir seulement style.css & style.css.map
 
-conseil philippe beck (evaluateur p4)
+conseil philippe beck (evaluateur p4).
 
 
 
