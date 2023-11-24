@@ -42,6 +42,12 @@ aucune erreur mais 3 avertissements du aux extensions proprietaire
 
 fichiers HTML et CSS passés au validateur w3c
 
+-- NEW version -- 24-11-2023
+
+underscore pour ne pas compiler autres que le main et obtenir seulement style.css & style.css.map
+
+conseil philippe beck (evaluateur p4)
+
 
 
 
